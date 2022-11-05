@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PROGETTO</title>
+</head>
+<body>
+    <div id="containerHead">
+        <div id="itemHead"><img class="logo" src="img/apulia_logo.png" alt=""></div>
+        <div id="itemHead"><h1>ATM</h1></div>
+        <div id="itemHead"><img class="logo_2" src="img/auriga.webp" alt=""></div>
+    </div>
+    <div id="containerMain">
+        <div id="itemMainBorder">test</div>
+        <div id="itemMainMain">
+            <div id="resultDiv">
+                <marquee behavior="scroll" direction="left"><h2>IN ATTESA DI OPERAZIONE...</h2></marquee>
+            <br><br><br><br>
+                <img src="img/apulia_logo.png" alt="logo">
+            </div>        
+            <div id="itemButtonInner">
+                <button class="cancelButton" id="cancelButton">RIPRISTINA</button>
+                <button class="submitButton" id="submitButton">CONFERMA</button>
+            </div>
+        </div>
+
+        <div id="itemMainMenu">
+            <div id="itemMainInner">
+                <h3>INSERIRE I CAMPI NECESSARI ALLA VALIDAZIONE</h3>
+                    <div id="containerInput">    
+                        <div id="itemPlaceholder">
+                            <div class="itemImg"><img class="placeholder" src="img/user.png" alt=""></div>
+                        </div>
+                        <div id="itemLabel">
+                        <div class="itemInput">
+                            <label class="labelBlock" for="bankcode">BankCode</label>
+                            <input type="text" id="bankcode" placeholder="Inserire il BankCode" onkeypress="return isNumberKey(event)">
+                        </div>
+                        <div class="itemInput">
+                            <label class="labelBlock" for="pan">PAN</label>
+                            <input type="text" id="pan" placeholder="Inserire il PAN">
+                        </div>
+                    </div>
+
+            </div>
+            <div id="itemCheck">
+        
+                  <h3>SELEZIONARE LE PERIFERICHE</h3>
+                <input type="checkbox" id="CDM" name="CDM" value="CDM">
+                <label for="CDM">Dispensatore Banconote</label>
+    
+                <input type="checkbox" id="CIM" name="CIM" value="CIM">
+                <label for="CIM">Modulo di versamento</label>
+    
+                <input type="checkbox" id="RPR" name="RPR" value="RPR">
+                <label for="RPR">Stampante scontrino</label>
+            
+                <input type="checkbox" id="IPM" name="IPM" value="IPM">
+                <label for="IPM">Scanner assegni</label>
+                
+                <input type="checkbox" id="KEYBOARD" name="KEYBOARD" value="KEYBOARD">
+                <label for="KEYBOARD">Tastiera</label>
+            </div>
+        </div>
+        <div id="itemMainBorder">test</div>
+    </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
